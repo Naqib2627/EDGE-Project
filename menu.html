@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name - Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background Image for the Menu Section */
+        .menu-bg {
+            background-image: url('https://via.placeholder.com/1200x800'); /* Replace with your own background image */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white; /* Light color text */
+        }
+
+        /* Custom Styling for the Menu Table */
+        .menu-table-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-title {
+            text-align: center;
+            color: #e5a900; /* Warm yellow color */
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .table thead {
+            background-color: #333; /* Dark background for the table header */
+            color: #fff; /* White text in the header */
+        }
+
+        .table td, .table th {
+            text-align: center;
+            vertical-align: middle;
+            color: #f0f0f0; /* Light text for the table content */
+        }
+
+        .menu-item-description {
+            font-style: italic;
+            color: #bbb; /* Light gray color for descriptions */
+        }
+
+        .price {
+            font-weight: bold;
+            color: #ff5722; /* Orange color for prices */
+        }
+
+        .price::before {
+            content: "৳";
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h1>Restaurant Name</h1>
+            <p>Explore our delectable menu!</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Section with Beautiful Background -->
+    <section class="menu-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="menu-table-container">
+                        <h2 class="menu-title mb-4">Our Delicious Menu</h2>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Dish</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Spaghetti Carbonara</td>
+                                    <td class="menu-item-description">Classic Italian pasta with creamy sauce and pancetta</td>
+                                    <td class="price">650</td>
+                                </tr>
+                                <tr>
+                                    <td>Margherita Pizza</td>
+                                    <td class="menu-item-description">Fresh mozzarella, tomatoes, and basil on a thin crust</td>
+                                    <td class="price">450</td>
+                                </tr>
+                                <tr>
+                                    <td>Grilled Salmon</td>
+                                    <td class="menu-item-description">Served with grilled vegetables and a side of rice</td>
+                                    <td class="price">950</td>
+                                </tr>
+                                <tr>
+                                    <td>Chicken Tikka Masala</td>
+                                    <td class="menu-item-description">Tender chicken in a spicy, creamy tomato sauce</td>
+                                    <td class="price">750</td>
+                                </tr>
+                                <tr>
+                                    <td>Beef Steak</td>
+                                    <td class="menu-item-description">Grilled to perfection, served with mashed potatoes</td>
+                                    <td class="price">1200</td>
+                                </tr>
+                                <tr>
+                                    <td>Vegetable Stir Fry</td>
+                                    <td class="menu-item-description">Assorted seasonal vegetables sautéed in soy sauce</td>
+                                    <td class="price">550</td>
+                                </tr>
+                                <tr>
+                                    <td>Classic Cheeseburger</td>
+                                    <td class="menu-item-description">Beef patty with cheese, lettuce, tomato, and special sauce</td>
+                                    <td class="price">550</td>
+                                </tr>
+                                <tr>
+                                    <td>Garlic Bread</td>
+                                    <td class="menu-item-description">Crispy and buttery, served with a side of marinara sauce</td>
+                                    <td class="price">150</td>
+                                </tr>
+                                <tr>
+                                    <td>Chocolate Lava Cake</td>
+                                    <td class="menu-item-description">Warm molten chocolate cake with a scoop of vanilla ice cream</td>
+                                    <td class="price">400</td>
+                                </tr>
+                                <tr>
+                                    <td>Fresh Fruit Salad</td>
+                                    <td class="menu-item-description">A mix of seasonal fruits served with a honey-lime dressing</td>
+                                    <td class="price">300</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
